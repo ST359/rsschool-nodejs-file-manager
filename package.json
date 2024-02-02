@@ -7,10 +7,11 @@
   },
   "type": "module",
   "scripts": {
+    "start": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ST359/rsschool-nodejs-file-manager"
+    "url": "git+https://github.com/ST359/rsschool-nodejs-file-manager.git"
   },
   "keywords": [
     "nodejs",
@@ -18,7 +19,9 @@
   ],
   "author": "ST359",
   "license": "ISC",
+  "homepage": "https://github.com/ST359/rsschool-nodejs-file-manager",
+  "main": "index.js",
   "bugs": {
-  },
-  "homepage": "https://github.com/ST359/rsschool-nodejs-file-manager"
+    "url": "https://github.com/ST359/rsschool-nodejs-file-manager/issues"
+  }
 }
