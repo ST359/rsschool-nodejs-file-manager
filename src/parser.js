@@ -1,6 +1,9 @@
 import { inputRegex } from "./constants.js";
 
 export const parseInput = (inputLine) =>{
+    if(!inputLine){
+        return null;
+    }
     let cmd = {command: null, args: null};
     let inputArray = inputLine.match(inputRegex);
     inputArray = inputArray.map(item => item.replace(/"|'/g, ""));

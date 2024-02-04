@@ -17,7 +17,7 @@ export const ls = async (dir) => {
 };
 
 export const up = (currDir) => {
-    return path.resolve(currDir, '..')
+    return path.resolve(currDir, '..');
 }
 
 export const cd = async (currDir, destDir) => {
