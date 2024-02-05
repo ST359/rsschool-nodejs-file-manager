@@ -1,0 +1,27 @@
+{
+  "name": "rsschool-file-manager",
+  "version": "1.0.0",
+  "description": "This repository is the solution of File Manager task https://github.com/ST359/rsschool-nodejs-file-manager",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST359/rsschool-nodejs-file-manager.git"
+  },
+  "keywords": [
+    "nodejs",
+    "filemanager"
+  ],
+  "author": "ST359",
+  "license": "ISC",
+  "homepage": "https://github.com/ST359/rsschool-nodejs-file-manager",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/ST359/rsschool-nodejs-file-manager/issues"
+  }
+}
