@@ -31,5 +31,6 @@ export const cd = async (currDir, destDir) => {
         return newDir;
     }catch(err){
         console.log(`Invalid input`);
+        return currDir;
     }
 }

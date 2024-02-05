@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { ls, up, cd } from "./navigation.js";
 import { osInfoHandler } from "./osInfoHandler.js";
-
+import { fileHandler } from "./fileHandler.js";
 export class cliApp {
     constructor(dir, username) {
         this._currDir = dir;
@@ -29,7 +29,7 @@ export class cliApp {
             case ".exit":
                 process.exit();
             default:
-                console.log('Operation failed');
+                await fileHandler(cmd, this._currDir);
                 break;
         }
     };

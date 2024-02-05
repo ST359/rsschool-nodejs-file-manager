@@ -3,7 +3,7 @@ import os from "node:os";
 export const osInfoHandler = (arg) => {
     switch (arg) {
         case "--EOL":
-            console.log(os.EOL);
+            console.log(JSON.stringify(os.EOL));
             break;
         case "--cpus":
             let cpusArr = os.cpus();
