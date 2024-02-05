@@ -127,8 +127,8 @@ const cp = async (currDir, file, dest) => {
         );
         return -1;
     }
-    rs = createReadStream(filePath);
-    ws = createWriteStream(destPath);
+    const rs = createReadStream(filePath);
+    const ws = createWriteStream(destPath);
     try {
         await pipeline(rs, ws);
     } catch (err) {
@@ -203,4 +203,3 @@ const decompress = async (currDir, file, dest) => {
         console.log("Operation failed");
     }
 };
-await add('C:/', 'C:/Users/1337/testdir/test2.txt')

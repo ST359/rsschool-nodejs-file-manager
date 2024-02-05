@@ -1,19 +1,22 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import { ls, up, cd } from "./navigation.js";
 import { osInfoHandler } from "./osInfoHandler.js";
 import { fileHandler } from "./fileHandler.js";
+import { COMMANDS } from "./constants.js";
+
 export class cliApp {
     constructor(dir, username) {
         this._currDir = dir;
         this.username = username;
     }
     commandHandler = async (cmd) => {
-        if (!cmd){
-            console.log('No command was given');
+        if (!cmd) {
+            console.log("No command was given");
             return;
         }
         switch (cmd.command) {
+            case "commands":
+                console.table(COMMANDS);
+                break;
             case "ls":
                 await ls(this._currDir);
                 break;
